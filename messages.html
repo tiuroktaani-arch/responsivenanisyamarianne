@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <style>
+body {
+    background-color: #0c3c01;
+    margin: 0;
+    padding: 20px;
+    font-family: cursive;
+    color: green;
+    text-align: center;
+}
+
+h1, h3 {
+    text-align: center;
+    color: white;
+    margin-top: 1cm;
+}
+
+/* CONTAINER FLEX */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    margin-top: 40px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* BOXES */
+.box1, .box2 {
+    border: 5px solid green;
+    background-color: rgb(228, 233, 237);
+    box-shadow: 0 0 15px 10px green;
+    text-align: center;
+    padding: 30px 20px;   /* smaller padding for mobile */
+    width: 300px;          /* base width */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.box1 span, .box2 span {
+    font-size: 100px; /* scalable heart size */
+}
+
+/* hover effect */
+.box1:hover, .box2:hover {
+    transform: scale(1.05);
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+/* P TAG */
+p {
+    background-color: white;
+    color: green;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .box1, .box2 {
+        width: 45%; /* 2 per row */
+        padding: 25px 15px;
+    }
+
+    .box1 span, .box2 span {
+        font-size: 80px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .container {
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .box1, .box2 {
+        width: 100%; /* stacked vertically */
+        padding: 20px 10px;
+    }
+
+    .box1 span, .box2 span {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        padding: 15px;
+        margin-top: 30px;
+    }
+}
+</style>
+</head>
+<body>
+    <h1>THIS IS FOR YOU MARIANNE!!</h1>
+    <h3>No matter where life takes us, we will always be with you.</h3>
+    <div class="container">
+        <a href="jan2mes.html" target="_blank" style="text-decoration: none;color: green;"><div class="box1"><span style="font-size: 150px;">💚</span><br>CLICK TO OPEN THE CARD💚</div></a>
+        <a href="kylames.html" target="_blank" style="text-decoration: none;color: green;"> <div class="box2"><span style="font-size: 150px;">💚</span><br>CLICK TO OPEN THE CARD💚</div></a>
+    </div>
+    <div class="container">
+        <a href="lesliemes.html" target="_blank" style="text-decoration: none;color: green;"> <div class="box1"><span style="font-size: 150px;">💚</span><br>CLICK TO OPEN THE CARD💚</div></a>
+        <a href="joymes.html" target="_blank" style="text-decoration: none;color: green;"> <div class="box2"><span style="font-size: 150px;">💚</span><br>CLICK TO OPEN THE CARD💚</div></a>
+    </div>
+
+<p><span style="font-size: 100px;"><a href="firstpage.html" target="_blank" style="text-decoration: none;">💚</a></span><br><span style="font-size: x-large;">
+WE LOVE YOU MARIANNE ALWAYSSS!!</span><br>may your day as beautiful and wonderful as you are</p>
+</body>
+</html>

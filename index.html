@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+        }
+
+        /* Video background */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .login {
+            background-color: rgba(0, 128, 0, 0.85);
+            box-shadow: 0 0 15px 5px #2e2d1d;
+            width: 90%;
+            max-width: 450px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid green;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #2e2d1d;
+            font-size: 1.3rem;
+        }
+
+        p {
+            color: #2e2d1d;
+            font-size: 0.95rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid green;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+            color: #2e2d1d;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .but {
+            text-decoration: none;
+            color: #2e2d1d;
+            display: block;
+        }
+
+        .emoji {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #2e2d1d;
+        }
+
+        /* 📱 Mobile screens */
+        @media (max-width: 480px) {
+            .login {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            .logo {
+                width: 75px;
+                height: 75px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <video autoplay muted loop playsinline>
+        <source src="marianne2.mp4" type="video/mp4">
+    </video>
+
+    <div class="login">
+        <img src="pic.jpg" alt="Logo" class="logo">
+
+        <h2>🎂 FOR MY SPECIAL PERSON 🎂</h2>
+        <p>Enter your Birthdate Maryaniii</p>
+
+        <input type="date">
+
+        <button>
+            <a href="firstpage.html" target="_blank" class="but">UNLOCK MY GIFT</a>
+        </button>
+
+        <p>🎂🎉🎁</p>
+
+        <div class="emoji">
+            created with love by me
+        </div>
+    </div>
+
+</body>
+</html>
